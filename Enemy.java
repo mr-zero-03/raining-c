@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Enemy {
 
   int lives = 0;
