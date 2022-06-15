@@ -1,13 +1,15 @@
+import java.util.Arrays;
+
 public class Map {
 
   int level = 0;
-  int words[];
+  String words[];
 
   String correctWord = "";
 
   public Map( int level, int maxWordsPerBatch ) {
     this.level = level;
-    this.words = new int[ maxWordsPerBatch ];
+    this.words = new String[ maxWordsPerBatch ];
   }
 
   public void launchThunder() {
@@ -16,7 +18,7 @@ public class Map {
   public void launchWords( String words[], String correctWord ) {
     this.correctWord = correctWord;
 
-    int wordsSize = this.words.length
+    int wordsSize = this.words.length;
     for ( int i = 0; i < wordsSize; i++ ) {
       this.words[ i ] = words[ i ];
     }
